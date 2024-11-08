@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate Gallery</title>
+    <link rel="stylesheet" href="certificates.css">
+</head>
+<body>
+    <!-- Title Bar -->
+    <div id="title-bar">
+        <h1>Certificate Gallery</h1>
+    </div>
+
+    <div id="main-section">
+        <h2>Certificates</h2>
+
+        <!-- Search and Filter Container -->
+        <div class="search-filter-container">
+            <input type="text" id="search-bar" placeholder="Search certificates...">
+            
+            <div class="filter-container">
+                <label for="filter-category">Category:</label>
+                <select id="filter-category">
+                    <option value="all">All</option>
+                </select>
+
+                <label for="filter-subcategory">Subcategory:</label>
+                <select id="filter-subcategory">
+                    <option value="all">All</option>
+                </select>
+            </div>
+        </div>
+
+        <!-- Certificates Section -->
+        <div id="certificates-container">
+            <div class="category-container">
+                <h2 class="category-title">Education</h2>
+                <div class="subcategory-container">
+                    <h3 class="subcategory-title">Courses</h3>
+                    <div class="certificates-grid">
+                        <div class="certificate">
+                            <img src="certificate1.jpg" alt="Certificate 1">
+                            <p>Certificate 1</p>
+                        </div>
+                        <div class="certificate">
+                            <img src="certificate2.jpg" alt="Certificate 2">
+                            <p>Certificate 2</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="subcategory-container">
+                    <h3 class="subcategory-title">Hackathon</h3>
+                    <div class="certificates-grid">
+                        <div class="certificate">
+                            <img src="certificate3.jpg" alt="Certificate 3">
+                            <p>Certificate 3</p>
+                        </div>
+                        <div class="certificate">
+                            <img src="certificate4.jpg" alt="Certificate 4">
+                            <p>Certificate 4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Firebase Scripts -->
+    <script type="module" src="certificates.js"></script>
+</body>
+</html>
